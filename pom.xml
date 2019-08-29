@@ -93,12 +93,13 @@
         <!-- Integration tests are run during the verify phase. -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-               <configuration>
-                        <testFailureIgnore>true</testFailureIgnore>
-                        <includes>
-                           <include>**/*IT.java*</include>
-                        </includes>
-        <version>2.22.0</version>
+        <configuration>
+             <testFailureIgnore>true</testFailureIgnore>
+             <includes>
+                   <include>**/*IT.java*</include>
+             </includes>
+         </configuration>
+         <version>2.22.0</version>
         <executions>
           <execution>
             <goals>
