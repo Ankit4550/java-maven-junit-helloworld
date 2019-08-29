@@ -124,12 +124,8 @@
 <append>true</append>
 </configuration>
 </execution>
-<!– Prepares a variable, jacoco.agent.it.arg, that contains the info
-to be passed to the JVM hosting the code being tested. –>
 <execution>
 <id>prepare-it-agent</id>
-<!– moved to package phase to be sure all pre-integration test have
-it already set to bring up environments with jacoco agent as JVM params –>
 <phase>package</phase>
 <goals>
 <goal>prepare-agent-integration</goal>
