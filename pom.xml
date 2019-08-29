@@ -85,7 +85,7 @@
   <version>2.22.0</version>
   <configuration>
   <excludes>
-    <exclude>**/**IT*</exclude>
+    <exclude>**/*IT*</exclude>
   </excludes>
   </configuration>
 </plugin>
@@ -95,7 +95,7 @@
 <version>2.22.0</version>
 <configuration>
 <includes>
-<include>**/**IT*</include>
+<include>**/*IT*</include>
 </includes>
 </configuration>
 <executions>
