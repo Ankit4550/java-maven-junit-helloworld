@@ -90,9 +90,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
            <testFailureIgnore>true</testFailureIgnore>
-           <excludes>
+           <!--<excludes>
                  <exclude>src/test/java/*IT.java</exclude>
-          </excludes>
+          </excludes> -->
           </configuration>
         <version>2.22.0</version>
       </plugin>
