@@ -91,7 +91,7 @@
         <configuration>
            <testFailureIgnore>true</testFailureIgnore>
            <excludes>
-                 <exclude>**/*IT.java*</exclude>
+                 <exclude>src/test/java/*IT.java</exclude>
           </excludes>
           </configuration>
         <version>2.22.0</version>
@@ -105,7 +105,7 @@
         <configuration>
              <testFailureIgnore>true</testFailureIgnore>
              <includes>
-                   <include>**/*IT.java*</include>
+                   <include>src/test/java/*IT.java</include>
              </includes>
          </configuration>
          <version>2.22.0</version>
@@ -211,7 +211,7 @@
   <configuration>
 <argLine>-Xmx1G -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled ${jacoco.agent.ut.arg}</argLine>
   <excludes>
-    <exclude>**/*IT.java*</exclude>
+    <exclude>src/test/java/*IT.java</exclude>
   </excludes>
   </configuration>
 </plugin>
@@ -222,7 +222,7 @@
 <configuration>
 <argLine>-Xmx1G -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled ${jacoco.agent.it.arg}</argLine>
 <includes>
-<include>**/*IT.java*</include>
+<include>src/test/java/*IT.java</include>
 </includes>
 </configuration>
 <executions>
