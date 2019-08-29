@@ -210,9 +210,9 @@
   <version>2.22.0</version>
   <configuration>
 <argLine>-Xmx1G -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled ${jacoco.agent.ut.arg}</argLine>
-  <excludes>
+  <!-- <excludes>
     <exclude>src/test/java/*IT.java</exclude>
-  </excludes>
+  </excludes> -->
   </configuration>
 </plugin>
 <plugin>
