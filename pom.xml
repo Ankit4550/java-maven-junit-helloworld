@@ -84,9 +84,9 @@
   <artifactId>maven-surefire-plugin</artifactId>
   <version>2.22.0</version>
   <configuration>
-  <!--<excludes>
+  <excludes>
     <exclude>**/*IT*</exclude>
-  </excludes>-->
+  </excludes>
   </configuration>
 </plugin>
 <plugin>
@@ -126,7 +126,7 @@
 </execution>
 <execution>
 <id>prepare-it-agent</id>
-<phase>package</phase>
+<phase>process-test-classes</phase>
 <goals>
 <goal>prepare-agent-integration</goal>
 </goals>
@@ -144,9 +144,9 @@
   <version>2.22.0</version>
   <configuration>
 <argLine>-Xmx1G -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled ${jacoco.agent.ut.arg}</argLine>
-  <!--<excludes>
+ <excludes>
     <exclude>**/*IT*</exclude>
-  </excludes>-->
+  </excludes>
   </configuration>
 </plugin>
 <plugin>
