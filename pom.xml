@@ -24,6 +24,15 @@
     <hamcrest.version>1.3</hamcrest.version>
     <mockito.version>2.21.0</mockito.version>
     <jacoco.plugin.version>0.8.1</jacoco.plugin.version>
+    <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+
+<jacoco.version>0.7.1.201405082137</jacoco.version>
+<jacoco.outputDir>${project.build.directory}/jacoco</jacoco.outputDir>
+<jacoco.out.ut.file>jacoco-ut.exec</jacoco.out.ut.file>
+<jacoco.out.it.file>jacoco-it.exec</jacoco.out.it.file>
+<sonar.jacoco.reportPath>${jacoco.outputDir}/${jacoco.out.ut.file}</sonar.jacoco.reportPath>
+<sonar.jacoco.itReportPath>${jacoco.outputDir}/${jacoco.out.it.file}</sonar.jacoco.itReportPath>
   </properties>
 
   <dependencies>
