@@ -35,8 +35,8 @@ public class HelloWithTestsIT {
 
     @Test
     public void doesItSayHelloTest() {
-        //String[] args = {"1"};
-        //HelloApp.main(args);
+        String[] args = {"1"};
+        HelloApp.main(args);
 
         assertThat(out.toString(), is(String.format("%s%s", Hello.HELLO, System.lineSeparator())));
     }
